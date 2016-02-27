@@ -1,0 +1,7 @@
+app:
+  build: .
+  command: 'hugo server -w --baseUrl="http://docker.dev:1313" --bind=0.0.0.0'
+  volumes:
+    - './src:/src'
+  ports:
+    - '1313:1313'
